@@ -12,10 +12,9 @@ import { SafeUser } from "@/app/types";
 
 import MenuItem from "./MenuItem";
 import Avatar from "../Avatar";
-import {User} from "@prisma/client";
 
 interface UserMenuProps {
-    currentUser?: User | null
+    currentUser?: SafeUser | null
 }
 
 const UserMenu: React.FC<UserMenuProps> = ({
